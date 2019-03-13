@@ -9,7 +9,7 @@ import Classes.Hangman;
 
 /**
  *
- * @author Marine Veyssiere
+ * @author Marine V
  */
 public class Main {
 
