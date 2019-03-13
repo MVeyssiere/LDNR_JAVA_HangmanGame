@@ -1,17 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Classes;
 
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Scanner;
+import Helpers.WordsHelper;
 
 /**
  *
- * @author marin
+ * @author Marine V
  */
 public class Hangman {
 
@@ -54,6 +50,7 @@ public class Hangman {
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose a letter: ");
         char choosedLetter = sc.nextLine().charAt(0);
+        validAlphabet(choosedLetter);
 
         return choosedLetter;
     }
