@@ -7,6 +7,7 @@ package Classes;
 
 import java.util.HashSet;
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -49,10 +50,14 @@ public class Hangman {
         return myWord;
     }
 
-//    private char askForLetter() {
-//
-//    }
-//
+    private char askForLetter() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose a letter: ");
+        char choosedLetter = sc.nextLine().charAt(0);
+
+        return choosedLetter;
+    }
+
 //    private String checkLetter(char letter) {
 //
 //    }
