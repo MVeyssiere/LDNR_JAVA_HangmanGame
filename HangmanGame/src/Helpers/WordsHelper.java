@@ -12,8 +12,8 @@ package Helpers;
 public class WordsHelper {
 
     // check if the user enter a letter known in the alphabet
-    public void validAlphabet(char letter) {
-
+    public static final void validAlphabet(char letter) {
+        System.out.println("test");
     }
 
 }
