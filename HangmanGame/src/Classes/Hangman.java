@@ -11,20 +11,20 @@ import Helpers.WordsHelper;
  */
 public class Hangman {
 
-    private String[] dictionary = {
+    private final String[] dictionary = {
         "byte", "hardware", "software", "bluetooth", "mouse", "troll", "Worm", "cookies", "podcast", "newbie", "computer", "thunking", "dword", "dumbphone", "scrum", "blob"
     };
 
     //attributes
-    private String secretWord;
-    private int fails;
-    private int tries;
-    private HashSet<Character> proposedLetters;
-    private HashSet<Character> foundLetters;
-    private boolean hanged;
-    private boolean found;
+    private final String secretWord;
+    private final int fails;
+    private final int tries;
+    private final HashSet<Character> proposedLetters;
+    private final HashSet<Character> foundLetters;
+    private final boolean hanged;
+    private final boolean found;
     // private boolean debug; // a debug mode to display the word to find
-    private int MAX_FAILS = 7;
+    private final int MAX_FAILS = 7;
 
     //constructors
     public Hangman() {
@@ -50,7 +50,7 @@ public class Hangman {
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose a letter: ");
         char choosedLetter = sc.nextLine().charAt(0);
-        validAlphabet(choosedLetter);
+        WordsHelper.validAlphabet(choosedLetter);
 
         return choosedLetter;
     }
